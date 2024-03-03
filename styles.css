@@ -1,0 +1,154 @@
+﻿:root {
+    --AccColor: #f6b42d;
+    --AccColorHover: #ffc137;
+    --AccColorBorder: #cfa117;
+}
+
+body {
+    background: #70a2e9;
+    font-family: 'Times New Roman', Times, serif
+    ;height: 100vh
+     ;overflow: hidden
+}
+
+.container {
+    width: 90%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 25px;
+    border: 2px solid #cbcbcb;
+}
+
+.top {
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 3em;
+    border-radius: 50px;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#reloadButton {
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    margin-right: 5%;
+    padding: 0;
+    height: max-content;
+    top: -50%;
+    position: relative;
+    transform: translateY(100%)
+}
+
+@keyframes mean {
+
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 7200deg;
+    }
+}
+
+#reloadImg {
+    width: 20px;
+    height: 20px;
+}
+
+#question {
+    font-size: 30px;
+    color: #5a6772;
+}
+
+.button-grp {
+    margin-top: 30px;
+    display:  flex;
+    justify-content: center;
+}
+
+#choice1,
+#choice2,
+#choice3,
+#choice0 {
+    width: 20%;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 10px 40px 10px 7.6px;
+    padding: 10px 10px;
+    color: #222;
+    border: 1px solid var(--AccColorBorder);
+    background: var(--AccColor);
+}
+
+
+
+#choice1:hover,
+#choice2:hover,
+#choice3:hover,
+#choice0:hover {
+    cursor: pointer;
+    background: var(--AccColorHover)
+}
+
+#choice1:focus,
+#choice2:focus,
+#choice3:focus,
+#choice0:focus {
+    outline: 0;
+}
+
+#progress {
+    color: #2b2b2b;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+@media (max-width: 425px)
+{
+
+    #choice1,
+    #choice2,
+    #choice3,
+    #choice0 {
+        width: 80%;
+        font-size: 20px;
+        border-radius: 15px;
+        margin: 10px 40px 10px 7.6px;
+        padding: 10px 10px;
+        color: #222;
+        border: 1px solid var(--AccColorBorder);
+        background: var(--AccColor);
+    }
+
+}
+
+@media (max-width: 225px) {
+
+    #choice1,
+    #choice2,
+    #choice3,
+    #choice0 {
+        width: 80%;
+        font-size: 20px;
+        border-radius: 15px;
+        margin: 10px 40px 10px 7.6px;
+        padding: 10px 10px;
+        color: #222;
+        border: 1px solid var(--AccColorBorder);
+        background: var(--AccColor);
+    }
+}

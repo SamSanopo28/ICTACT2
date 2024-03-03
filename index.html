@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Quiz App</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="script.js" defer async></script>
+</head>
+<body>
+    <div class="container">
+
+        
+        <div id="quiz">
+
+            <div class="top">
+
+                <button id="reloadButton" type='button'>
+                    <img src="reload.png" id="reloadImg" />
+                </button>
+
+                <h1>Quiz</h1>
+
+            </div>
+
+            <hr style="margin-bottom: 20px">
+
+            <p id="question"></p>
+
+            <div class="button-grp">
+                <button id="choice0"><span id="spanChoice0"></span></button>
+                <button id="choice1"><span id="spanChoice1"></span></button>
+                <button id="choice2"><span id="spanChoice2"></span></button>
+                <button id="choice3"><span id="spanChoice3"></span></button>
+            </div>
+
+            <hr style="margin-top: 50px">
+
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
